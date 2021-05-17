@@ -83,14 +83,7 @@
                 if(mysqli_query($conn, $sql)){
                     $tid = mysqli_insert_id($conn);
                     $_SESSION['tid'] = $tid;
-
-                    $sql = "INSERT INTO status (TrackingID, StaffID, Dispatched) VALUES ($tid, '$id', CURRENT_TIMESTAMP)";
-                    if(mysqli_query($conn, $sql)){
-                        header("Location: receipt.php");
-                    }else{
-                        echo "Error : " . mysqli_error($conn);
-                    }
-                    
+                    header("Location: receipt.php");
                 }else{
                     echo "Error : " . mysqli_error($conn);
                 }

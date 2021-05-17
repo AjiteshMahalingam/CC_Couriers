@@ -50,6 +50,7 @@
                 <tr><td style="font-weight:bold;">DOJ</td><td><?php echo $staff['DOJ']; ?></td></tr>
                 <tr><td style="font-weight:bold;">Email</td><td><?php echo $staff['Email']; ?></td></tr>
                 <tr><td style="font-weight:bold;">Mobile</td><td><?php echo $staff['Mobile']; ?></td></tr>
+                <tr><td style="font-weight:bold;">Credits</td><td><?php echo $staff['Credits']; ?></td></tr>
             </table>
         </div>
         <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; position: relative;">
