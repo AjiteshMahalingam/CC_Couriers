@@ -1,0 +1,107 @@
+body, html{
+
+    margin: 0;
+    height: 100%;
+    background-image: url('../Images/bbg2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    overflow-x: hidden;
+    position: relative;
+    z-index: -99;
+    font-family: Arial, Helvetica, sans-serif !important; 
+
+}
+#logo{
+    height: 100px  !important;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    z-index: 9;
+}
+.active{
+    font-weight: bold !important;
+    color: black !important;
+    border-bottom: 2px solid black;
+}
+
+#mainNav a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid black;
+
+}
+#dd-menu div:hover{
+    
+    background-color: #66ccff ;
+
+}
+.contact { 
+    color: white;
+    padding: 15px;
+    height: auto;
+    margin: 10px;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgba(0,0, 0, 0.7);
+    border-radius: 20px;
+}
+
+.track {
+    position: relative;
+    background-color: #ddd;
+    height: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+    margin-top: 50px
+}
+
+.track .step {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 25%;
+    margin-top: -18px;
+    text-align: center;
+    position: relative
+}
+
+.track .step.active:before {
+    background: #FF5722
+}
+
+.track .step::before {
+    height: 7px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 18px
+}
+
+.track .step.active .icon {
+    background: #ee5435;
+    color: #fff
+}
+
+.track .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-radius: 100%;
+    background: #ddd
+}
+
+.track .step.active .text {
+    font-weight: 400;
+    color: #000
+}
+
+.track .text {
+    display: block;
+    margin-top: 7px
+}
