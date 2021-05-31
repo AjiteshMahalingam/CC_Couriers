@@ -23,7 +23,7 @@
     <body style="font-family: Arial, Helvetica, sans-serif;">
         <div ><img src="Images/logo.png" id="logo" style="height: 100px !important;  margin-top: 10px !important; "  ></div>
         <div class="background"></div> 
-        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.5); margin-top:10px !important;">
+        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.7); margin-top:10px !important;">
             <div class="container">
                 <button class="navbar-toggler text-dark" data-toggle="collapse" data-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
             <div class="row">
             <?php foreach($branches as $branch) : ?>
                 
-                <div class="p-3 col-12" style="background-color: rgba(255, 255, 255, 0.5); margin-top:5px !important;">
+                <div class="p-3 col-12" style="background-color: rgba(255, 255, 255, 0.7); margin-top:5px !important;">
                     <ul style="list-style-type:none;">
                         <li><a href="#" class="fa fa-map-marker m-1" style="pointer-events: none;"></a><?php echo '  '.$branch['Address']; ?></li>
                         <li><a href="#" class="fa fa-phone m-1" style="pointer-events: none;"></a><?php echo '  '.$branch['Contact']; ?></li>
@@ -54,7 +54,7 @@
             <?php endforeach; ?>
             </div>
         </div>
-        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; position: relative; ">
+        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; position: relative; ">
             <div class="i-bar" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin-bottom: 2em;">
                 <a class="fa fa-facebook " href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>
                 <a class="fa fa-instagram" href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>

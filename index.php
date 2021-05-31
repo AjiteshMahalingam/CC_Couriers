@@ -16,13 +16,13 @@
         if(empty($_POST['name'])){
             $error['name'] = "*Required";
         }else{
-            $name = $_POST['name'];
+            $name = mysqli_real_escape_string($conn, $_POST['name']);
         }
         if(empty($_POST['email'])){
             $error['email'] = "*Required";
         }else{
             if(email_validation($_POST['email'])){
-                $email = $_POST['email'];
+                $email =  mysqli_real_escape_string($conn, $_POST['email']);
             }else{
                 $error['email'] = "*Invalid email";
             }
@@ -30,21 +30,21 @@
         if(empty($_POST['msg'])){
             $error['msg'] = "*Required";
         }else{
-            $msg = $_POST['msg'];
+            $msg = mysqli_real_escape_string($conn, $_POST['msg']);
         }
         if(! array_filter($error)){
-            $to = "ajitesh2k1@gmail.com";
-            $subj = $name." - ".$email;
-            $txt = $msg;
-
             $sql = "INSERT INTO feedback (Cust_name, Cust_mail, Cust_msg) VALUES ('$name', '$email', '$msg')";
             if(mysqli_query($conn, $sql)){
                 echo '<script type="text/javascript">';
                 echo "setTimeout(function () { swal('Thank You', 'Your response recorded successfully !!', 'success');";
                 echo '}, 1000);</script>';
+                $name = $email = $msg = '';
             }else{
                 echo "Insert Error : " . mysqli_error($conn);
             }
+            //$to = "ajitesh2k1@gmail.com";
+            //$subj = $name." - ".$email;
+            //$txt = $msg;
             //if(mail($to, $subj, $txt)){
             //    echo '<script type="text/javascript">';
             //    echo "setTimeout(function () { swal('Delivered', 'Your response sent successfully !!', 'success');";
@@ -93,7 +93,7 @@
     <body style="font-family: Arial, Helvetica, sans-serif;">
         <div ><img src="Images/logo.png" id="logo" style="height: 100px !important;  margin-top: 10px !important;"  ></div>
         <div class="background"></div> 
-        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.5); margin-bottom: 20px; margin-top:10px !important;">
+        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.7); margin-bottom: 20px; margin-top:10px !important;">
             <div class="container">
                 <button class="navbar-toggler text-dark" data-toggle="collapse" data-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
@@ -150,20 +150,20 @@
          </div>
          <div class="container" id="about" style="margin-top: 20px; width: 85%;">
              <div class="row">
-                <div class="col-md-6 p-5" style="background-color: rgba(255, 255, 255, 0.5); color: black; border-radius: 15px; ">
+                <div class="col-md-6 p-5" style="background-color: rgba(255, 255, 255, 0.7); color: black; border-radius: 15px; ">
                     <h2 class="display-5 text-center mb-3 pb-2" style="border-bottom: 2px solid white;">About Us</h2>
                     <p>The launch of CC Couriers from the house of CC Cargo services is exclusively designed to meet the commercial and personal shipment needs of our customers in both urban and rural destinations. We are emerging as a top destination for ‘same-day’ transportation and are continuously serving our customers 24/7/365. We constantly expand our resources to cater to our customer expectation addressing their unique market needs.</p>
                     <p class="pb-3" style="border-bottom: 2px solid white;">Having created a brand in the cargo industry we have ventured into the courier business with the same commitment. We offer flexible and faster delivery solutions. We have spread our footprints far and wide with our bouquet of products and services. We deliver promptly for all your time critical projects.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="Images/abt.jpg" style="height: 500px; width: 100%; padding-top: 5%;" >
+                    <img src="Images/abt3.jpg" style="height: 500px; width: 100%; padding-top: 5%;" >
                 </div>
              </div>
          </div>
          <div class="container" style="margin-top: 20px; width: 85%;">
             <div class="row">
-                <div class="col-md-6 text-center p-5" style="background-color: rgba(255, 255, 255, 0.5); color: black; ">
-                    <img src="Images/emofmonth.png" style="width: 100%; border-top:2px solid white;" >
+                <div class="col-md-6 text-center p-5" style="background-color: rgba(255, 255, 255, 0.7); color: black; ">
+                    <img src="Images/eom.jpg" style="width: 100%; border-top:2px solid white;" >
                     <?php foreach($empmonth as $emp) : ?>
                         <div style="margin:auto !important; border-bottom:2px solid white;">
                             <p class="text-center pt-2" style="font-family: 'Times New Roman', Times, serif !important; font-size:x-large;"><?php echo $emp['Name'] ?></p>
@@ -172,7 +172,7 @@
                         </div>
                     <?php endforeach; ?>              
                 </div>
-                <div class="col-md-6 text-center p-5" style="background-color: rgba(255, 255, 255, 0.5); color: black;  "  id='contact'>
+                <div class="col-md-6 text-center p-5" style="background-color: rgba(255, 255, 255, 0.7); color: black;  "  id='contact'>
                         <h4 style="border-bottom:2px solid white; padding-bottom:2px;">Contact Us</h4>
                         <form action="index.php" class="form text-left" method = "POST">
                             <div class="form-group">
@@ -196,7 +196,7 @@
              </div>
             
          </div>
-         <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; position: relative; ">
+         <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; position: relative; ">
             <div class="i-bar" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin-bottom: 2em;">
                 <a class="fa fa-facebook " href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>
                 <a class="fa fa-instagram" href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>

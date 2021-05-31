@@ -83,7 +83,7 @@
                 if(mysqli_query($conn, $sql)){
                     $tid = mysqli_insert_id($conn);
                     $_SESSION['tid'] = $tid;
-                    header("Location: receipt.php");
+                    header("Location: receipt.php");                    
                 }else{
                     echo "Error : " . mysqli_error($conn);
                 }
@@ -124,7 +124,7 @@
             }
         }else{
             $errors['status'] = 'Enter a valid tracking ID';
-            echo "Error : " . mysqli_error();
+            //echo "Error : " . mysqli_error($conn);
         }
     }
     if(isset($_POST['update'])){
@@ -191,13 +191,13 @@
         <div class="container mt-10">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link active" id="ins-tab" data-toggle="tab" href="#ins" role="tab" aria-controls="ins" aria-selected="true">New Order</a>
+                  <a class="nav-link active" id="ins-tab" data-toggle="tab" href="#ins" role="tab" aria-controls="ins" aria-selected="true" style="color: black;">New Order</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="update-tab" data-toggle="tab" href="#update" role="tab" aria-controls="update" aria-selected="false">Update Order</a>
+                  <a class="nav-link" id="update-tab" data-toggle="tab" href="#update" role="tab" aria-controls="update" aria-selected="false" style="color: black;">Update Order</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <a class="nav-link" id="cons-tab" data-toggle="tab" href="#cons" role="tab" aria-controls="cons" aria-selected="false">Consignments</a>
+                  <a class="nav-link" id="cons-tab" data-toggle="tab" href="#cons" role="tab" aria-controls="cons" aria-selected="false" style="color: black;">Consignments</a>
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
@@ -205,7 +205,7 @@
                     <div class="container">
                         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" class="form" method="POST">
                             <div class="row text-center">
-                            <div class="col-md-6 p-3" style="background-color: rgba(255, 255, 255, 0.5);">
+                            <div class="col-md-6 p-3" style="background-color: rgba(255, 255, 255, 0.7);">
                                 <h3 class="mb-3">Sender's Details</h3>
                                 <div class="form-group text-left pl-5">
                                     <label>Name    : </label>
@@ -233,7 +233,7 @@
                                     <label class="text-danger"><?php echo $errors['req'];?></label>
                                 </div>
                             </div>
-                            <div class="col-md-6 p-3" style="background-color: rgba(255, 255, 255, 0.5);">
+                            <div class="col-md-6 p-3" style="background-color: rgba(255, 255, 255, 0.7);">
                                 <h3 class="mb-3">Receiver's Details</h3>
                                 <div class="form-group text-left pl-5">
                                     <label>Name : </label>
@@ -274,17 +274,17 @@
                 <div class="tab-pane fade" id="update" role="tabpanel" aria-labelledby="update-tab">
                     <div class="container mt-10">
                         <div class="row">
-                            <div class="col-4 p-4 text-center pt-0" style="background-color: rgba(255, 255, 255, 0.5); margin-top: 20px;">
+                            <div class="col-4 p-4 text-center pt-0" style="background-color: rgba(255, 255, 255, 0.7); margin-top: 20px;">
                                  <form action="" method="POST" class="form">
                                     <div class="form-group">
                                         <label style="font-size: 20px;">Tracking ID : </label>
-                                        <input type="text" style="border-radius: 8px;" name="inp_tid">
-                                        <label class="text-danger"><?php echo $errors['req'];?></label>
+                                        <input type="text" style="border-radius: 8px;" name="inp_tid" value="<?php echo $_SESSION['up_tid'] ?? $status['TrackingID']??'' ; ?>">
+                                        <label class="text-danger"><?php echo $errors['status']??'';?></label>
                                     </div>
                                     <input type="submit" name="sel_order" class="btn btn-light text-center" value="Select" style="font-size: 20px;">
                                 </form>
                             </div>
-                            <div class="col-8 p-4 " style="background-color: rgba(255, 255, 255, 0.5); margin-top: 20px; ">
+                            <div class="col-8 p-4 " style="background-color: rgba(255, 255, 255, 0.7); margin-top: 20px; ">
                                 <h3 class="display-6 text-center pb-2 mb-3" style="border-bottom: 2px solid black;">Order Details</h3>
                                 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" class="form">
                                     <div class="form-group">
@@ -320,15 +320,15 @@
                 <div class="tab-pane fade" id="cons" role="tabpanel" aria-labelledby="cons-tab">
                     <ul class="nav nav-tabs" id="myTab2" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link active" id="arr-tab" data-toggle="tab" href="#arr" role="tab" aria-controls="arr" aria-selected="true">Arrived</a>
+                          <a class="nav-link active" id="arr-tab" data-toggle="tab" href="#arr" role="tab" aria-controls="arr" aria-selected="true" style="color: black;">Arrived</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <a class="nav-link" id="del-tab" data-toggle="tab" href="#del" role="tab" aria-controls="del" aria-selected="false">Delivered</a>
+                          <a class="nav-link" id="del-tab" data-toggle="tab" href="#del" role="tab" aria-controls="del" aria-selected="false" style="color: black;">Delivered</a>
                         </li>
                       </ul>
                       <div class="tab-content b-0" id="myTabContent">
                         <div class="tab-pane fade show active" id="arr" role="tabpanel" aria-labelledby="arr-tab">
-                            <table class="table table-hover table-bordered table-striped table-hover" style="background-color: rgba(255, 255, 255, 0.6);">
+                            <table class="table table-hover table-bordered table-striped table-hover" style="background-color: rgba(255, 255, 255, 0.8);">
                                 <thead class="thead-dark">
                                     <tr class="table-info"><td>TrackingID</td><td>StaffID</td><td>Sender</td><td>Receiver</td><td>Weight</td><td>Price</td><td>Dispatched</td><td>Shipped</td><td>Out for delivery</td><td>Delivered</td></tr>                    
                                 </thead>
@@ -351,7 +351,7 @@
                             </table>
                         </div>
                         <div class="tab-pane fade" id="del" role="tabpanel" aria-labelledby="del-tab">
-                        <table class="table table-hover table-bordered table-striped table-hover" style="background-color: rgba(255, 255, 255, 0.6);" >
+                        <table class="table table-hover table-bordered table-striped table-hover" style="background-color: rgba(255, 255, 255, 0.8);" >
                                 <thead class="thead-dark">
                                     <tr class="table-info"><td>TrackingID</td><td>StaffID</td><td>Sender</td><td>Receiver</td><td>Weight</td><td>Price</td><td>Dispatched</td><td>Shipped</td><td>Out for delivery</td><td>Delivered</td></tr>                    
                                 </thead>
@@ -390,7 +390,7 @@
               </script>
         </div>
           
-        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; position: relative;">
+        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; position: relative;">
             <div class="i-bar" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin-bottom: 2em;">
                 <a class="fa fa-facebook " href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>
                 <a class="fa fa-instagram" href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>

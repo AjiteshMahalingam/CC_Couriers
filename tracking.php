@@ -94,7 +94,7 @@
     <body style="font-family: Arial, Helvetica, sans-serif;">
         <div ><img src="Images/logo.png" id="logo" style="height: 100px !important;  margin-top: 10px !important; " ></div>
         <div class="background"></div> 
-        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.5); margin-top:10px !important;">
+        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.7); margin-top:10px !important;">
             <div class="container">
                 <button class="navbar-toggler text-dark" data-toggle="collapse" data-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
@@ -113,7 +113,7 @@
         </nav>
         <div class="container mt-10">
             <div class="row">
-                <div class="col-md-4 p-4 text-center pt-0" style="background-color: rgba(255, 255, 255, 0.5); margin-top: 20px;">
+                <div class="col-md-4 p-4 text-center pt-0" style="background-color: rgba(255, 255, 255, 0.7); margin-top: 20px;">
                     <img src="Images/track3.png" style="margin:0 auto; height: 250px;">
                     <form action="" method="POST" class="form">
                         <div class="form-group">
@@ -124,7 +124,7 @@
                         <input type="submit" name="track" class="btn btn-light text-center" value="Track" style="font-size: 20px;">
                     </form>
                 </div>
-                <div class="col-md-8 p-4 " style="background-color: rgba(255, 255, 255, 0.5); margin-top: 20px;">
+                <div class="col-md-8 p-4 " style="background-color: rgba(255, 255, 255, 0.7); margin-top: 20px;">
                     <h3 class="display-6 text-center pb-2 mb-3" style="border-bottom: 2px solid black;">Delivery Status</h3>
                     <label>Tracking ID : <?php echo $trackid; ?></label><br>
                     <div class="track bg-info">
@@ -163,7 +163,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; position: relative;">
+        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; position: relative;">
             <div class="i-bar" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin-bottom: 2em;">
                 <a class="fa fa-facebook " href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>
                 <a class="fa fa-instagram" href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>

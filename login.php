@@ -65,7 +65,7 @@
     <body style="font-family: Arial, Helvetica, sans-serif;">
         <div ><img src="Images/logo.png" id="logo" style="height: 100px !important;  margin-top: 10px !important;" ></div>
         <div class="background"></div> 
-        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.5);  margin-top:10px !important;">
+        <nav class="navbar navbar-toggleable-md navbar-expand-lg navbar-default navbar-light mb-10" style="background-color: rgba(255, 255, 255, 0.7);  margin-top:10px !important;">
             <div class="container">
                 <button class="navbar-toggler text-dark" data-toggle="collapse" data-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container text-center p-3" style="background-color: rgba(255, 255, 255, 0.5); margin-top: 20px; border-radius: 15px; width: 35%;">
+        <div class="container text-center p-3" style="background-color: rgba(255, 255, 255, 0.7); margin-top: 20px; border-radius: 15px; width: 35%;">
         
             <img src="Images/userlogo.png" style="margin:0 auto; height: 140px; width: 140px; margin-bottom: 15px;">
             <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
@@ -100,7 +100,7 @@
                 <input type="submit" name="submit" class="btn btn-light text-center" value="Sign In" style="font-size: 20px;">
             </form>
         </div>
-        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.5); padding: 20px; position: absolute; bottom: 0; left: 0; ">
+        <div class="container-fluid text-center mt-5" style="background-color: rgba(255, 255, 255, 0.7); padding: 20px; position: absolute; bottom: 0; left: 0; ">
             <div class="i-bar" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content:center; margin-bottom: 2em;">
                 <a class="fa fa-facebook " href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>
                 <a class="fa fa-instagram" href="#" style="border: none; text-decoration: none;  margin: 0em 1em; color:black; font-size: xx-large;"></a>

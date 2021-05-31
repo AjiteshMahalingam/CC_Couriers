@@ -1,0 +1,116 @@
+[
+{"type":"header","version":"4.8.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"cc_couriers"},
+{"type":"table","name":"branches","database":"cc_couriers","data":
+[
+{"Branch_id":"1","Address":"11, St.Joseph Church Campus, Dindigul - 624001","Contact":"4512424892","Email":"cccourierdgl@xyz.com","Manager_id":"CC3511"},
+{"Branch_id":"2","Address":"B-211, 11th Avenue, Ashok Nagar, Chennai - 600083","Contact":"4443147782","Email":"cccourierschennai@xyz.com","Manager_id":"CC0246"},
+{"Branch_id":"3","Address":"5E, Municipal Office Street, Tiruppur - 641604","Contact":"4214956251","Email":"cccourierstiruppur@xyz.com","Manager_id":"CC1234"},
+{"Branch_id":"4","Address":"72, Arun complex, Brough Road, Erode - 638001","Contact":"4245276485","Email":"cccourierserode@xyz.com","Manager_id":"CC1212"},
+{"Branch_id":"5","Address":"207, Abirami Nagar, Mettupalayam Road, Koundapalayam, Coimbatore - 641030","Contact":"3563343593","Email":"cccourierscbe@xyz.com","Manager_id":"CC3503"}
+]
+}
+,{"type":"table","name":"credentials","database":"cc_couriers","data":
+[
+{"StaffID":"CC0101","Pwd":"0101"},
+{"StaffID":"CC0246","Pwd":"0246"},
+{"StaffID":"CC0369","Pwd":"0369"},
+{"StaffID":"CC1212","Pwd":"1212"},
+{"StaffID":"CC1234","Pwd":"1234"},
+{"StaffID":"CC3267","Pwd":"3267"},
+{"StaffID":"CC3503","Pwd":"14-07"},
+{"StaffID":"CC3511","Pwd":"3511"},
+{"StaffID":"CC4567","Pwd":"4567"},
+{"StaffID":"CC5555","Pwd":"5555"},
+{"StaffID":"CC9876","Pwd":"9876"}
+]
+}
+,{"type":"table","name":"feedback","database":"cc_couriers","data":
+[
+{"F.No":"1","Cust_name":"Ajitesh Mahalingam","Cust_mail":"ajitesh.mahalingam2@gmail.com","Cust_msg":"Test"},
+{"F.No":"2","Cust_name":"Torvus","Cust_mail":"tovus@gmail.com","Cust_msg":"I will be glad to know about the job opportunities open in Udumalpet branch "},
+{"F.No":"3","Cust_name":"Ajitesh M","Cust_mail":"ajitesh.mahalingam@gmail.com","Cust_msg":"Track ID = 10812. Faced an issue of damaged package."},
+{"F.No":"4","Cust_name":"Madhu","Cust_mail":"madhumitha@gmail.com","Cust_msg":"Great service. Thank You Ma'am."},
+{"F.No":"5","Cust_name":"Madhu","Cust_mail":"madhumitha@gmail.com","Cust_msg":"Great service. Thank You Ma'am."},
+{"F.No":"6","Cust_name":"Vinay","Cust_mail":"vinay1324@gmail.com","Cust_msg":"Sir\/Mam,\r\nTracking ID : 10812\r\nReceived damaged package."},
+{"F.No":"7","Cust_name":"Ajitesh","Cust_mail":"ajitesh@gmail.com","Cust_msg":"Great service."}
+]
+}
+,{"type":"table","name":"parcel","database":"cc_couriers","data":
+[
+{"TrackingID":"10806","StaffID":"CC3503","S_Name":"Landon","S_Add":"5, Greenpark Residency","S_City":"Trichy","S_State":"Tamil Nadu","S_Contact":"9944557860","R_Name":"Sanjuktha","R_Add":"15, Eden palace","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9912365407","Weight_Kg":"5.50","Price":"275.00","Dispatched_Time":"2021-05-06 12:10:29"},
+{"TrackingID":"10807","StaffID":"CC0246","S_Name":"Lizzie","S_Add":"5, Salvatore Boarding House","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9487512036","R_Name":"Jossie","R_Add":"8, French quarters","R_City":"Agra","R_State":"Uttar Pradesh","R_Contact":"941212360","Weight_Kg":"2.75","Price":"962.50","Dispatched_Time":"2021-05-06 16:04:38"},
+{"TrackingID":"10808","StaffID":"CC0246","S_Name":"Lizzie","S_Add":"5, Salvatore Boarding House","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9487512036","R_Name":"Jossie","R_Add":"8, French quarters","R_City":"Agra","R_State":"Uttar Pradesh","R_Contact":"941212360","Weight_Kg":"2.75","Price":"962.50","Dispatched_Time":"2021-05-06 16:31:43"},
+{"TrackingID":"10809","StaffID":"CC0246","S_Name":"Lizzie","S_Add":"5, Salvatore Boarding House","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9487512036","R_Name":"Jossie","R_Add":"8, French quarters","R_City":"Agra","R_State":"Uttar Pradesh","R_Contact":"941212360","Weight_Kg":"2.75","Price":"962.50","Dispatched_Time":"2021-05-06 16:33:57"},
+{"TrackingID":"10810","StaffID":"CC0246","S_Name":"Karthick","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9417417410","R_Name":"Dhamini","R_Add":"7\/8, Arun excelo, Avadi","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9412365870","Weight_Kg":"2.00","Price":"100.00","Dispatched_Time":"2021-05-06 18:55:54"},
+{"TrackingID":"10811","StaffID":"CC0246","S_Name":"Karthick","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9417417410","R_Name":"Dhamini","R_Add":"7\/8, Arun excelo, Avadi","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9412365870","Weight_Kg":"2.00","Price":"100.00","Dispatched_Time":"2021-05-06 18:59:40"},
+{"TrackingID":"10812","StaffID":"CC0246","S_Name":"Karthick","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9417417410","R_Name":"Dhamini","R_Add":"7\/8, Arun excelo, Avadi","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9412365870","Weight_Kg":"2.00","Price":"100.00","Dispatched_Time":"2021-05-06 19:00:20"},
+{"TrackingID":"10813","StaffID":"CC0246","S_Name":"Karthick","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9417417410","R_Name":"Dhamini","R_Add":"7\/8, Arun excelo, Avadi","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9412365870","Weight_Kg":"2.00","Price":"100.00","Dispatched_Time":"2021-05-06 19:05:01"},
+{"TrackingID":"10814","StaffID":"CC1234","S_Name":"Rajesh","S_Add":"6, Angel Residency","S_City":"Theni","S_State":"Tamil Nadu","S_Contact":"9955487612","R_Name":"Sanjuktha","R_Add":"15, Eden palace","R_City":"Kochi","R_State":"Kerala","R_Contact":"9912365407","Weight_Kg":"1.00","Price":"100.00","Dispatched_Time":"2021-05-10 15:00:29"},
+{"TrackingID":"10815","StaffID":"CC3267","S_Name":"Rishi","S_Add":"78, Tatabad","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9633652140","R_Name":"Celine","R_Add":"34, Cheta gardens","R_City":"Palakkad","R_State":"Kerala","R_Contact":"9514236870","Weight_Kg":"2.75","Price":"275.00","Dispatched_Time":"2021-05-10 22:47:00"},
+{"TrackingID":"10816","StaffID":"CC3267","S_Name":"Rishi","S_Add":"78, Tatabad","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9852630147","R_Name":"Celine","R_Add":"34, Cheta gardens","R_City":"Palakkad","R_State":"Kerala","R_Contact":"9514273680","Weight_Kg":"2.00","Price":"200.00","Dispatched_Time":"2021-05-10 22:54:23"},
+{"TrackingID":"10817","StaffID":"CC3267","S_Name":"Jai","S_Add":"6, Angel Residency","S_City":"Trichy","S_State":"Tamil Nadu","S_Contact":"9178542036","R_Name":"Arya","R_Add":"75, Main cross street","R_City":"Alapuzha","R_State":"Kerala","R_Contact":"9514236870","Weight_Kg":"2.00","Price":"200.00","Dispatched_Time":"2021-05-10 22:56:39"},
+{"TrackingID":"10818","StaffID":"CC3267","S_Name":"Jai","S_Add":"6, Angel Residency","S_City":"Trichy","S_State":"Tamil Nadu","S_Contact":"9178542036","R_Name":"Arya","R_Add":"75, Main cross street","R_City":"Alapuzha","R_State":"Kerala","R_Contact":"9514236870","Weight_Kg":"2.00","Price":"200.00","Dispatched_Time":"2021-05-10 23:11:38"},
+{"TrackingID":"10819","StaffID":"CC4567","S_Name":"Karthick","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9417417410","R_Name":"Dhamini","R_Add":"75, Main cross street","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9412365870","Weight_Kg":"1.25","Price":"62.50","Dispatched_Time":"2021-05-11 00:30:37"},
+{"TrackingID":"10820","StaffID":"CC4567","S_Name":"Eswar","S_Add":"12, MJ Gardens","S_City":"Erode","S_State":"Tamil Nadu","S_Contact":"9922663300","R_Name":"Chanya","R_Add":"45, BB street","R_City":"Theni","R_State":"Tamil Nadu","R_Contact":"9956823147","Weight_Kg":"1.00","Price":"50.00","Dispatched_Time":"2021-05-11 00:45:00"},
+{"TrackingID":"10821","StaffID":"CC1212","S_Name":"Aathmika","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9512034687","R_Name":"Sanjuktha","R_Add":"15, Eden palace","R_City":"Theni","R_State":"Tamil Nadu","R_Contact":"9912365407","Weight_Kg":"7.00","Price":"350.00","Dispatched_Time":"2021-05-13 19:42:10"},
+{"TrackingID":"10822","StaffID":"CC5555","S_Name":"Sudharshan","S_Add":"1, Greenpark layout","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9485760123","R_Name":"Shariq","R_Add":"27, CB Street","R_City":"Coimbatore","R_State":"Tamil Nadu","R_Contact":"9514200368","Weight_Kg":"10.00","Price":"500.00","Dispatched_Time":"2021-05-17 10:52:00"},
+{"TrackingID":"10823","StaffID":"CC5555","S_Name":"Sudharshan","S_Add":"1, Greenpark layout","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9485760123","R_Name":"Shariq","R_Add":"27, CB Street","R_City":"Coimbatore","R_State":"Tamil Nadu","R_Contact":"9514200368","Weight_Kg":"10.00","Price":"500.00","Dispatched_Time":"2021-05-17 10:53:18"},
+{"TrackingID":"10824","StaffID":"CC3503","S_Name":"Ajitesh M","S_Add":"1, TRN Gardens","S_City":"Udumalpet","S_State":"Tamil Nadu","S_Contact":"9488393922","R_Name":"Dorain","R_Add":"10, KK Residency","R_City":"Theni","R_State":"Tamil Nadu","R_Contact":"9966332211","Weight_Kg":"2.50","Price":"125.00","Dispatched_Time":"2021-05-28 21:37:57"},
+{"TrackingID":"10825","StaffID":"CC3503","S_Name":"Alaric","S_Add":"10, Salvatore Printing House","S_City":"Chennai","S_State":"Tamil Nadu","S_Contact":"9633221108","R_Name":"Dorian","R_Add":"15, Amazon School bookstore","R_City":"Hyderabad","R_State":"Andhra Pradhesh","R_Contact":"9956823147","Weight_Kg":"23.00","Price":"2875.00","Dispatched_Time":"2021-05-29 15:15:53"},
+{"TrackingID":"10826","StaffID":"CC3503","S_Name":"Karthick","S_Add":"78, Tatabad","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9417417410","R_Name":"Celine","R_Add":"34, Cheta gardens","R_City":"Alapuzha","R_State":"Kerala","R_Contact":"9514236870","Weight_Kg":"3.50","Price":"350.00","Dispatched_Time":"2021-05-29 15:26:35"},
+{"TrackingID":"10827","StaffID":"CC3503","S_Name":"Karthick","S_Add":"10, Jos Residency","S_City":"Coimbatore","S_State":"Tamil Nadu","S_Contact":"9485760123","R_Name":"Celine","R_Add":"7\/8, Arun excelo, Avadi","R_City":"Chennai","R_State":"Tamil Nadu","R_Contact":"9514236870","Weight_Kg":"3.00","Price":"150.00","Dispatched_Time":"2021-05-30 17:24:23"},
+{"TrackingID":"10828","StaffID":"CC3503","S_Name":"Jai","S_Add":"6, Angel Residency","S_City":"Trichy","S_State":"Tamil Nadu","S_Contact":"9633221108","R_Name":"Arya","R_Add":"34, Cheta gardens","R_City":"Palakkad","R_State":"Kerala","R_Contact":"9412365870","Weight_Kg":"5.00","Price":"500.00","Dispatched_Time":"2021-05-31 12:16:56"}
+]
+}
+,{"type":"table","name":"pricing","database":"cc_couriers","data":
+[
+{"S.No":"0","State_1":"Tamil Nadu","State_2":"Tamil Nadu","Cost":"50"},
+{"S.No":"1","State_1":"Tamil Nadu","State_2":"Kerala","Cost":"100"},
+{"S.No":"2","State_1":"Tamil Nadu","State_2":"Andhra Pradhesh","Cost":"125"},
+{"S.No":"3","State_1":"Tamil Nadu","State_2":"Karnataka","Cost":"130"},
+{"S.No":"4","State_1":"Tamil Nadu","State_2":"Maharashtra","Cost":"200"},
+{"S.No":"5","State_1":"Tamil Nadu","State_2":"Delhi","Cost":"300"},
+{"S.No":"6","State_1":"Tamil Nadu","State_2":"Uttar Pradesh","Cost":"350"},
+{"S.No":"7","State_1":"Tamil Nadu","State_2":"West Bengal","Cost":"275"}
+]
+}
+,{"type":"table","name":"staff","database":"cc_couriers","data":
+[
+{"StaffID":"CC3503","Name":"Stefan Salvatore","Designation":"Branch Manager","Gender":"Male","DOB":"1991-06-08","DOJ":"2015-07-14","Salary":"55000","Mobile":"1597324860","Email":"abc@xyz.com","Credits":"35"},
+{"StaffID":"CC9876","Name":"Arjun","Designation":"Staff","Gender":"Male","DOB":"1990-02-17","DOJ":"2016-08-12","Salary":"35000","Mobile":"9563287410","Email":"arjun@xyz.com","Credits":"0"},
+{"StaffID":"CC4567","Name":"Alaric Saltzman","Designation":"Staff","Gender":"Male","DOB":"1992-09-13","DOJ":"2019-03-23","Salary":"38000","Mobile":"8526459190","Email":"asaltzman@xyz.com","Credits":"10"},
+{"StaffID":"CC3511","Name":"Bonnie Bennet","Designation":"Branch Manager","Gender":"Female","DOB":"1998-07-24","DOJ":"2019-04-09","Salary":"38000","Mobile":"9487512306","Email":"bbennet@xyz.com","Credits":"0"},
+{"StaffID":"CC0246","Name":"Caroline Forbes","Designation":"Branch Manager","Gender":"Female","DOB":"1995-09-27","DOJ":"2018-02-06","Salary":"40000","Mobile":"9571368420","Email":"careforbes@xyz.com","Credits":"35"},
+{"StaffID":"CC1234","Name":"Hayley Marshal","Designation":"Branch Manager","Gender":"Female","DOB":"1996-07-12","DOJ":"2017-06-08","Salary":"42000","Mobile":"9658741230","Email":"haymarsh@xyz.com","Credits":"5"},
+{"StaffID":"CC5555","Name":"Josette","Designation":"Staff","Gender":"Female","DOB":"1989-05-09","DOJ":"2019-05-15","Salary":"32000","Mobile":"9856321470","Email":"jossie@xyz.com","Credits":"10"},
+{"StaffID":"CC0369","Name":"Kai Parker","Designation":"Staff","Gender":"Male","DOB":"1994-08-08","DOJ":"2021-04-15","Salary":"25000","Mobile":"9630258741","Email":"meetkai@xyz.com","Credits":"0"},
+{"StaffID":"CC0101","Name":"Millie B","Designation":"Staff","Gender":"Female","DOB":"1998-03-12","DOJ":"2020-12-12","Salary":"30000","Mobile":"9871234560","Email":"milliebrown@xyz.com","Credits":"0"},
+{"StaffID":"CC1212","Name":"Klaus Mikelson","Designation":"Branch Manager","Gender":"Male","DOB":"1985-07-23","DOJ":"2012-09-16","Salary":"55000","Mobile":"9514782036","Email":"niklausmike@xyz.com","Credits":"5"},
+{"StaffID":"CC3267","Name":"Tyler Lockwood","Designation":"Staff","Gender":"Male","DOB":"2000-05-13","DOJ":"2021-05-03","Salary":"23000","Mobile":"9546287130","Email":"tylerwood@xyz.com","Credits":"20"}
+]
+}
+,{"type":"table","name":"status","database":"cc_couriers","data":
+[
+{"TrackingID":"10807","StaffID":"CC0246","Dispatched":"2021-05-06 19:11:20","Shipped":"2021-05-09 21:54:42","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10808","StaffID":"CC0246","Dispatched":"2021-05-06 19:11:20","Shipped":"2021-05-06 18:29:19","Out_for_delivery":"2021-05-29 15:07:28","Delivered":"2021-05-29 15:10:31"},
+{"TrackingID":"10809","StaffID":"CC0246","Dispatched":"2021-05-06 19:11:20","Shipped":"2021-05-29 16:25:15","Out_for_delivery":"2021-05-29 16:25:28","Delivered":null},
+{"TrackingID":"10812","StaffID":"CC0246","Dispatched":"2021-05-06 19:11:20","Shipped":"2021-05-06 19:05:31","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10813","StaffID":"CC0246","Dispatched":"2021-05-06 19:11:20","Shipped":"2021-05-06 19:13:22","Out_for_delivery":"2021-05-06 19:17:41","Delivered":"2021-05-06 19:18:05"},
+{"TrackingID":"10814","StaffID":"CC1234","Dispatched":"2021-05-10 15:00:29","Shipped":"2021-05-29 15:08:05","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10815","StaffID":"CC3267","Dispatched":"2021-05-10 22:47:00","Shipped":"2021-05-29 15:08:18","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10816","StaffID":"CC3267","Dispatched":"2021-05-10 22:54:23","Shipped":"2021-05-29 15:08:27","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10817","StaffID":"CC3267","Dispatched":"2021-05-10 22:56:39","Shipped":"2021-05-29 15:08:38","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10818","StaffID":"CC3267","Dispatched":"2021-05-10 23:11:38","Shipped":"2021-05-11 00:35:47","Out_for_delivery":"2021-05-11 00:36:25","Delivered":"2021-05-11 00:36:37"},
+{"TrackingID":"10820","StaffID":"CC4567","Dispatched":"2021-05-11 00:45:00","Shipped":null,"Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10821","StaffID":"CC1212","Dispatched":"2021-05-13 19:42:10","Shipped":"2021-05-13 19:42:58","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10822","StaffID":"CC5555","Dispatched":"2021-05-17 10:52:00","Shipped":"2021-05-29 15:09:51","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10823","StaffID":"CC5555","Dispatched":"2021-05-17 10:53:18","Shipped":"2021-05-29 15:10:00","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10824","StaffID":"CC3503","Dispatched":"2021-05-28 21:37:57","Shipped":"2021-05-29 15:10:12","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10825","StaffID":"CC3503","Dispatched":"2021-05-29 15:15:53","Shipped":"2021-05-29 15:21:16","Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10826","StaffID":"CC3503","Dispatched":"2021-05-29 15:26:35","Shipped":null,"Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10827","StaffID":"CC3503","Dispatched":"2021-05-30 17:24:23","Shipped":null,"Out_for_delivery":null,"Delivered":null},
+{"TrackingID":"10828","StaffID":"CC3503","Dispatched":"2021-05-31 12:16:56","Shipped":"2021-05-31 12:21:15","Out_for_delivery":null,"Delivered":null}
+]
+}
+]
