@@ -75,14 +75,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script>
-            function addCart(){
-               swal({
-                    title:'Added to Cart',
-                    icon:'success'
-                });
-            }
-        </script>
         <style>
             .carousel-inner img {
               width: 100%;
